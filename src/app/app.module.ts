@@ -8,6 +8,7 @@ import { masterFirebaseConfig } from './api-keys';
 
 import { AppComponent } from './app.component';
 import { SplashComponent } from './splash/splash.component';
+import { TeamListComponent } from './team-list/team-list.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -19,7 +20,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    SplashComponent
+    SplashComponent,
+    TeamListComponent
   ],
   imports: [
     BrowserModule,
