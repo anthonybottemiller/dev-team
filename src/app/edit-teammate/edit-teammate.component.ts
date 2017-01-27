@@ -20,4 +20,10 @@ export class EditTeammateComponent implements OnInit {
   beginUpdatingTeammate(teammateToUpdate){
     this.teammateService.updateTeammate(teammateToUpdate);
   }
+
+  beginDeletingTeammate(teammateToDelete){
+    if(confirm("Are you sure you want to delete this valuable developer?")){
+      this.teammateService.deleteTeammate(teammateToDelete);
+    }
+  }
 }
