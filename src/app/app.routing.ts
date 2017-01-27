@@ -4,6 +4,7 @@ import { SplashComponent } from './splash/splash.component';
 import { TeamListComponent } from './team-list/team-list.component';
 import { TeammateDetailComponent } from './teammate-detail/teammate-detail.component';
 import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 
