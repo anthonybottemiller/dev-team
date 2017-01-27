@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class TeamListComponent implements OnInit {
 
   teammates: FirebaseListObservable<any[]>;
+  filterBySpecialty: string = "All-Devs";
 
   constructor(private router: Router, private teammateService: TeammateService) { }
 
@@ -23,5 +24,9 @@ export class TeamListComponent implements OnInit {
 
   goToDetail(clickedTeammate) {
     this.router.navigate(['teammates', clickedTeammate.$key]);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterBySpecialty = optionFromMenu;
   }
 }
