@@ -7,6 +7,6 @@
 </select>
 <ul>
   <li *ngFor="let teammate of teammates | async | specialty:filterBySpecialty" (click)="goToDetail(teammate)">
-    {{teammate.name}} {{teammate.$key}}
+    {{teammate.name}}
   </li>
 </ul>
