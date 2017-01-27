@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { SplashComponent } from './splash/splash.component';
 import { TeamListComponent } from './team-list/team-list.component';
 import { TeammateDetailComponent } from './teammate-detail/teammate-detail.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     SplashComponent,
     TeamListComponent,
-    TeammateDetailComponent
+    TeammateDetailComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
