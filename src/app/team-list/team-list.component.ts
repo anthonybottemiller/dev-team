@@ -15,6 +15,7 @@ export class TeamListComponent implements OnInit {
 
   teammates: FirebaseListObservable<any[]>;
   filterBySpecialty: string = "All-Devs";
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private teammateService: TeammateService) { }
 
