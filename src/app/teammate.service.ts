@@ -21,4 +21,9 @@ export class TeammateService {
   getTeammateById(teammateId: string){
     return this.angularFire.database.object('teammates/' + teammateId);
   }
+
+  updateTeammate(localUpdatedTeammate){
+    var teammateEntryInDatabase = this.getTeammateById(localUpdatedTeammate.$key);
+    teammateEntryInDatabase.update({name: localUpdatedTeammate.name, specialty: localUpdatedTeammate.specialty, email: localUpdatedTeammate.email, phone: localUpdatedTeammate.phone});
+  }
 }
