@@ -11,6 +11,7 @@ import { SplashComponent } from './splash/splash.component';
 import { TeamListComponent } from './team-list/team-list.component';
 import { TeammateDetailComponent } from './teammate-detail/teammate-detail.component';
 import { AboutComponent } from './about/about.component';
+import { SpecialtyPipe } from './specialty.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     SplashComponent,
     TeamListComponent,
     TeammateDetailComponent,
-    AboutComponent
+    AboutComponent,
+    SpecialtyPipe
   ],
   imports: [
     BrowserModule,
