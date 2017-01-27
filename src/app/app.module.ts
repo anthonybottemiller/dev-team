@@ -12,6 +12,7 @@ import { TeamListComponent } from './team-list/team-list.component';
 import { TeammateDetailComponent } from './teammate-detail/teammate-detail.component';
 import { AboutComponent } from './about/about.component';
 import { SpecialtyPipe } from './specialty.pipe';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     TeamListComponent,
     TeammateDetailComponent,
     AboutComponent,
-    SpecialtyPipe
+    SpecialtyPipe,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
