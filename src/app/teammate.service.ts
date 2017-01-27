@@ -26,4 +26,9 @@ export class TeammateService {
     var teammateEntryInDatabase = this.getTeammateById(localUpdatedTeammate.$key);
     teammateEntryInDatabase.update({name: localUpdatedTeammate.name, specialty: localUpdatedTeammate.specialty, email: localUpdatedTeammate.email, phone: localUpdatedTeammate.phone});
   }
+
+  deleteTeammate(localTeammateToDelete){
+    var teammateEntryInDatabase = this.getTeammateById(localTeammateToDelete.$key);
+    teammateEntryInDatabase.remove();
+  }
 }
