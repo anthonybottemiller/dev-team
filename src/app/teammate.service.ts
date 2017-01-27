@@ -10,6 +10,10 @@ export class TeammateService {
   this.teammates = angularFire.database.list('teammates');
   }
 
+  addTeammate(newTeammate: Teammate) {
+    this.teammates.push(newTeammate);
+  }
+
   getTeammates(){
     return this.teammates;
   }
