@@ -1,3 +1,6 @@
-<p>
-  teammate-detail works!
-</p>
+<div>
+  <h2>{{(teammateToDisplay |async)?.name}}</h2>
+  <h3>{{(teammateToDisplay |async)?.specialty}}</h3>
+  <h3>{{(teammateToDisplay |async)?.email}}</h3>
+  <h3>{{(teammateToDisplay |async)?.phone}}</h3>
+</div>
