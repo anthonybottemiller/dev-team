@@ -1,0 +1,15 @@
+{ "teammates": [
+    {
+    "name": "Jim Test",
+    "specialty": "Front-End",
+    "phone": "3608355165",
+    "email": "jimtest@bdse.net"
+    },
+    {
+      "name": "Murphy Law",
+      "specialty": "Back-End",
+      "phone": "3608352445",
+      "email": "murphylaw@bdse.net"
+    }
+  ]
+}
