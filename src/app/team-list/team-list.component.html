@@ -6,7 +6,10 @@
   <option value="Back-End">Back End</option>
 </select>
 <ul>
-  <li *ngFor="let teammate of teammates | async | specialty:filterBySpecialty" (click)="goToDetail(teammate)">
-    {{teammate.name}}
-  </li>
+  <div *ngFor="let teammate of teammates | async | specialty:filterBySpecialty">
+    <li (click)="goToDetail(teammate)">{{teammate.name}}</li>
+    <div *ngIf="currentRoute === '/admin'">
+      <app-edit-teammate [selectedTeammate]="teammate"></app-edit-teammate>
+    </div>
+  </div>
 </ul>
