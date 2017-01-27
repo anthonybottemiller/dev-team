@@ -13,4 +13,8 @@ export class TeammateService {
   getTeammates(){
     return this.teammates;
   }
+
+  getTeammateById(teammateId: string){
+    return this.angularFire.database.object('teammates/' + teammateId);
+  }
 }
