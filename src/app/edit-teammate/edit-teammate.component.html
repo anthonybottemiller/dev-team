@@ -1,3 +1,23 @@
-<p>
-  edit-teammate works!
-</p>
+<h5>Edit Team Member</h5>
+<div>
+  <div class="form-group">
+    <label>Name:</label>
+    <input [(ngModel)]="selectedTeammate.name">
+  </div>
+  <div class="form-group">
+    <label>Specialty:</label>
+    <select [(ngModel)]="selectedTeammate.specialty">
+      <option value="Front-End">Front End</option>
+      <option value="Back-End">Back End</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Email:</label>
+    <input [(ngModel)]="selectedTeammate.email">
+  </div>
+  <div class="form-group">
+    <label>Phone:</label>
+    <input [(ngModel)]="selectedTeammate.phone">
+    <button (click)="beginUpdatingTeammate(selectedTeammate)" class="btn btn-success">Update</button>
+  </div>
+</div>
