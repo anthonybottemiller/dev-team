@@ -38,7 +38,7 @@ This application using Angular 2 CLI will help development teams keep a roster o
 * Click on "CREATE NEW PROJECT"
 * Give it a name you remember or use our reccomended default "dev-team"
 * Click on "Add Firebase to your web app"
-* From the code provided from firebase either copy and paste lines apikey, authDomain, databaseURL, storageBucket, messagingSenderId to the matching lines in api-keys.ts
+* From the code provided from firebase copy and paste the lines apikey, authDomain, databaseURL, storageBucket, messagingSenderId to the matching lines in api-keys.ts
 * Save "api-keys.ts" to "/dev-team/src/app/api-keys.ts"
 * Database setup complete proceed with installation
 
