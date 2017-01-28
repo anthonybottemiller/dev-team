@@ -20,12 +20,14 @@ This application using Angular 2 CLI will help development teams keep a roster o
 * TSlint
 * Angular 2
 * Angular 2 CLI
+* Google Firebase
 
 ##Requirements
 * Modern Web Browser
 * Node.js
 * NPM
 * Gulp CLI
+* Firebase Account
 
 ##Database Setup
 * Ensure that you have the repository cloned to your system
