@@ -27,9 +27,23 @@ This application using Angular 2 CLI will help development teams keep a roster o
 * NPM
 * Gulp CLI
 
+##Database Setup
+* Ensure that you have the repository cloned to your system
+* Open "/dev-team/api-keys.ts" with your favorite text editor
+* Go to [Google Firebase](https://firebase.google.com/) and start a new account
+* Sign into that account
+* Click on "Go to console"
+* Click on "CREATE NEW PROJECT"
+* Give it a name you remember or use our reccomended default "dev-team"
+* Click on "Add Firebase to your web app"
+* From the code provided from firebase either copy and paste lines apikey, authDomain, databaseURL, storageBucket, messagingSenderId to the matching lines in api-keys.ts
+* Save "api-keys.ts" to "/dev-team/src/app/api-keys.ts"
+* Database setup complete proceed with installation
+
 ##Installation
 * Clone Repository
 * Navigate to cloned repository using your favorite node compatible command line
+* Complete Database Setup section above
 * Execute command "npm install"
 * Execute command "bower install"
 * Execute command "ng build"
