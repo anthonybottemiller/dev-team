@@ -2,7 +2,7 @@
 
 #####To aid in tracking developers contact info
 
-#####By Anthony J Bottemiller - 1-27-2017
+#####By Anthony J Bottemiller - 1-27-2017 - README Updated 1-28-2017
 
 ##Description
 This application using Angular 2 CLI will help development teams keep a roster of their staff with relevant contact information.
